@@ -9,5 +9,7 @@
 
 ```
 npm install
-npm start
+
+# Run with localhost
+npm run dev 
 ```

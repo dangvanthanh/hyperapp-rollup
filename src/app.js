@@ -3,4 +3,4 @@ import actions from './actions'
 import state from './state'
 import view from './views'
 
-app({ state, actions, view })
+export const main = app(state, actions, view, document.getElementById('app'))
