@@ -1,6 +1,6 @@
-import babel from 'rollup-plugin-babel'
-import resolve from 'rollup-plugin-node-resolve'
-import uglify from 'rollup-plugin-uglify'
+import babel from 'rollup-plugin-babel';
+import resolve from 'rollup-plugin-node-resolve';
+import { terser } from 'rollup-plugin-terser';
 
 const plugins = [
   babel({
@@ -11,8 +11,8 @@ const plugins = [
   resolve({
     jsnext: true
   }),
-  uglify()
-]
+  terser()
+];
 
 let config = {
   input: './src/app.js',
@@ -23,6 +23,6 @@ let config = {
     sourcemap: false
   },
   plugins: plugins
-}
+};
 
-export default config
+export default config;

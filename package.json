@@ -6,21 +6,20 @@
     "dev": "rollup -c rollup.config.js -w",
     "build": "rollup -c rollup.config.prod.js"
   },
-  "author":
-    "Dang Van Thanh <dangvanthanh@dangthanh.org> (http://dangthanh.org)",
+  "author": "Dang Van Thanh <dangvanthanh@dangthanh.org> (http://dangthanh.org)",
   "license": "MIT",
   "dependencies": {
-    "hyperapp": "^1.0.1"
+    "hyperapp": "^1.2.6"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-es2015-rollup": "^3.0.0",
-    "rollup": "^0.53.3",
-    "rollup-plugin-babel": "^3.0.3",
+    "rollup": "^0.60.2",
+    "rollup-plugin-babel": "^3.0.4",
     "rollup-plugin-livereload": "^0.6.0",
-    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-serve": "^0.4.2",
-    "rollup-plugin-uglify": "^2.0.1"
+    "rollup-plugin-terser": "^1.0.1"
   }
 }

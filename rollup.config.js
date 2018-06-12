@@ -7,17 +7,17 @@ const plugins = [
   babel({
     babelrc: false,
     presets: ['es2015-rollup'],
-    plugins: [['transform-react-jsx', {pragma: 'h'}]],
+    plugins: [['transform-react-jsx', { pragma: 'h' }]]
   }),
   resolve({
-    jsnext: true,
+    jsnext: true
   }),
-  livereload(),
   serve({
     contentBase: './dist/',
     port: 8080,
-    open: true,
+    open: true
   }),
+  livereload()
 ];
 
 let config = {
@@ -26,9 +26,9 @@ let config = {
     name: 'app',
     file: './dist/app.js',
     format: 'umd',
-    sourcemap: true,
+    sourcemap: true
   },
-  plugins: plugins,
+  plugins: plugins
 };
 
 export default config;

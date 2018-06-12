@@ -1,3 +1,3 @@
-import { h } from 'hyperapp'
+import { h } from 'hyperapp';
 
-export default (state, actions) => <div>Hello {state.msg}!</div>
+export default (state, actions) => <div>Hello {state.msg}!</div>;
