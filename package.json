@@ -1,25 +1,26 @@
 {
-  "name": "hyperapp-rollup",
-  "version": "0.0.1",
-  "description": "Hyperapp Rollup Boilerplate",
-  "scripts": {
-    "dev": "rollup -c rollup.config.js -w",
-    "build": "rollup -c rollup.config.prod.js"
-  },
-  "author": "Dang Van Thanh <dangvanthanh@dangthanh.org> (http://dangthanh.org)",
-  "license": "MIT",
-  "dependencies": {
-    "hyperapp": "^1.2.6"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-es2015-rollup": "^3.0.0",
-    "rollup": "^0.60.2",
-    "rollup-plugin-babel": "^3.0.4",
-    "rollup-plugin-livereload": "^0.6.0",
-    "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-serve": "^0.4.2",
-    "rollup-plugin-terser": "^1.0.1"
-  }
+	"name": "hyperapp-rollup",
+	"version": "0.0.2",
+	"description": "Hyperapp Rollup Boilerplate",
+	"scripts": {
+		"dev": "rollup -c rollup.config.js -w",
+		"build": "rollup -c rollup.config.prod.js",
+		"lint": "biome lint ./src ",
+		"format": "biome format ./src --write"
+	},
+	"author": "Dang Van Thanh <dangvanthanh@dangthanh.org> (http://dangthanh.org)",
+	"license": "MIT",
+	"dependencies": {
+		"@hyperapp/html": "^2.0.0",
+		"hyperapp": "^2.0.22"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"rollup": "^4.39.0",
+		"rollup-plugin-babel": "^4.4.0",
+		"rollup-plugin-livereload": "^2.0.5",
+		"rollup-plugin-node-resolve": "^5.2.0",
+		"rollup-plugin-serve": "^3.0.0",
+		"rollup-plugin-terser": "^7.0.2"
+	}
 }

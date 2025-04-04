@@ -2,14 +2,18 @@
 
 > Hyperapp rollup boilerplate
 
-## Getting started
+## Getting tarted
 
 - Clone `hyperapp-rollup`
 - Run the command
 
-```
-npm install
+```shell
+bun install
 
 # Run with localhost
-npm run dev 
+bun run dev 
 ```
+
+## License
+
+MIT © [Dang Van Thanh](https://dangthanh.org)

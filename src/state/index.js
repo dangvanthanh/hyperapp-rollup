@@ -1,3 +1,1 @@
-export default {
-  msg: 'Hyperapp.js'
-};
+export default (msg = 'Hyperapp') => ({ msg })

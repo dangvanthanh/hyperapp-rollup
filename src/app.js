@@ -1,10 +1,10 @@
-import { app } from 'hyperapp';
-import actions from './actions';
-import state from './state';
-import view from './views';
+import { app } from 'hyperapp'
+import { main, h1, button, text } from '@hyperapp/html'
+import state from './state'
+import view from './views'
 
-async function appEntry() {
-  const main = app(state, actions, view, document.getElementById('app'));
-}
-
-appEntry();
+app({
+	init: state,
+	view,
+	node: document.getElementById('app'),
+})

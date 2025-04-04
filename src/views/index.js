@@ -1,3 +1,5 @@
-import { h } from 'hyperapp';
+import { main, button, text } from '@hyperapp/html'
+import { ReverseMsg } from '../actions'
 
-export default (state, actions) => <div>Hello {state.msg}!</div>;
+export default (state) =>
+	main([button({ onclick: ReverseMsg }, text(state.msg))])
