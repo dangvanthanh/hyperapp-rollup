@@ -421,6 +421,8 @@
     )
   };
 
+  var state = (msg = 'Hyperapp') => ({ msg });
+
   const EMPTY_ARR = [];
   const EMPTY_OBJ = {};
 
@@ -430,8 +432,6 @@
   ) => h(tag, props === children ? EMPTY_OBJ : props, children);
   const main = tag("main");
   const button = tag("button");
-
-  var state = (msg = 'Hyperapp') => ({ msg });
 
   const ReverseMsg = (state) => ({
   	...state,

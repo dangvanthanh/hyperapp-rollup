@@ -1,5 +1,4 @@
 import { app } from 'hyperapp'
-import { main, h1, button, text } from '@hyperapp/html'
 import state from './state'
 import view from './views'
 
